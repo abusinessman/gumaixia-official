@@ -1,0 +1,29 @@
+name: Deploy to CloudBase Hosting
+
+on:
+  push:
+    branches:
+      - master   # 你现在用的是 master 分支
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install CloudBase CLI
+        run: npm install -g @cloudbase/cli
+
+      - name: Deploy to CloudBase Hosting
+        env:
+          TCB_CLI_SECRET_ID: ${{ secrets.CLOUDBASE_SECRET_ID }}
+          TCB_CLI_SECRET_KEY: ${{ secrets.CLOUDBASE_SECRET_KEY }}
+        run: |
+          cloudbase hosting deploy . / -e ${{ secrets.CLOUDBASE_ENV_ID }}
