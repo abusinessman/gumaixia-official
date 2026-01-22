@@ -1,29 +1,49 @@
-name: Deploy to CloudBase Hosting
+name: Auto Deploy to CloudBase Hosting
 
+# 监听 master 分支的 push
 on:
   push:
     branches:
-      - master   # 你现在用的是 master 分支
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ 拉取仓库代码
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 2️⃣ 安装 Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # 3️⃣ 安装 CloudBase CLI
       - name: Install CloudBase CLI
         run: npm install -g @cloudbase/cli
 
-      - name: Deploy to CloudBase Hosting
+      # 4️⃣ 登录 CloudBase CLI（必须）
+      - name: CloudBase Login
         env:
           TCB_CLI_SECRET_ID: ${{ secrets.CLOUDBASE_SECRET_ID }}
           TCB_CLI_SECRET_KEY: ${{ secrets.CLOUDBASE_SECRET_KEY }}
         run: |
-          cloudbase hosting deploy . / -e ${{ secrets.CLOUDBASE_ENV_ID }}
+          cloudbase login --apiKeyId $TCB_CLI_SECRET_ID --apiKey $TCB_CLI_SECRET_KEY
+
+      # 5️⃣ 部署静态网站
+      - name: Deploy to CloudBase Hosting
+        env:
+          TCB_CLI_ENV_ID: ${{ secrets.CLOUDBASE_ENV_ID }}
+        run: |
+          cloudbase hosting deploy . / -e $TCB_CLI_ENV_ID
+
+      # 6️⃣ 可选：刷新 CDN 缓存（保证立刻看到更新）
+      # 如果你不需要可以删除
+      - name: Refresh Hosting CDN Cache
+        env:
+          TCB_CLI_ENV_ID: ${{ secrets.CLOUDBASE_ENV_ID }}
+        run: |
+          cloudbase hosting cdn refresh / -e $TCB_CLI_ENV_ID
