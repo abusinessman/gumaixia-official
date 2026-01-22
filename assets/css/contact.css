@@ -1,0 +1,62 @@
+/* Contact Page Specific Styles */
+.contact-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #eef5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.contact-qrcode {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.qrcode-wrapper {
+    text-align: center;
+}
+
+.qrcode-wrapper img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.qrcode-wrapper p {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
