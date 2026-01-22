@@ -1,62 +1,106 @@
 /* Contact Page Specific Styles */
 .contact-wrapper {
     display: flex;
-    gap: 50px;
+    gap: 30px;
+    align-items: stretch; /* 确保左右两列等高 */
+}
+
+.contact-info, .contact-qrcode {
+    flex: 1;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中内容 */
 }
 
 .contact-info {
-    flex: 1;
+    justify-content: flex-start; /* 信息栏顶部对齐，但容器等高 */
 }
 
 .info-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 30px;
 }
 
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
 .info-item i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
     margin-right: 20px;
-    width: 40px;
-    height: 40px;
-    background: #eef5ff;
+    width: 44px;
+    height: 44px;
+    background: #f0f7ff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.info-item h4 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+
+.info-item p {
+    color: #666;
+    line-height: 1.6;
 }
 
 .contact-qrcode {
-    flex: 1;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background: var(--white);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.qrcode-wrapper {
     text-align: center;
 }
 
+.qrcode-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .qrcode-wrapper img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 15px;
-    border: 1px solid #eee;
-    padding: 10px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+    border: 8px solid #f9f9f9;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.qrcode-wrapper img:hover {
+    transform: scale(1.05);
 }
 
 .qrcode-wrapper p {
     font-weight: 600;
     color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+    .contact-wrapper {
+        gap: 20px;
+    }
+    .contact-info, .contact-qrcode {
+        padding: 30px;
+    }
 }
 
 @media (max-width: 768px) {
     .contact-wrapper {
         flex-direction: column;
+    }
+    
+    .contact-info, .contact-qrcode {
+        flex: none;
+        width: 100%;
     }
 }
