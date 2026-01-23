@@ -134,16 +134,109 @@
 .slider-arrow.prev { left: 30px; }
 .slider-arrow.next { right: 30px; }
 
-/* Mobile Slider Responsive */
+/* Products Section */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.product-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Why Choose Us Section */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.why-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.why-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    background: var(--light-color);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.why-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Advantage Section */
+.advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.advantage-item {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.adv-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.adv-header i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.adv-header h3 {
+    font-size: 1.4rem;
+}
+
 @media (max-width: 768px) {
-    .slide-content h2 {
-        font-size: 2.5rem;
-    }
-    .slide-content p {
-        font-size: 1.1rem;
-    }
-    .slider-arrow {
-        display: none;
+    .why-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
-/* Hero Slider Section */
+
