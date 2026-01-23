@@ -6,68 +6,8 @@
     <title>精致下午茶 - 广州市谷麦夏餐饮管理有限公司</title>
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/product-detail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .product-detail-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/600?random=22');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-align: center;
-            margin-top: 80px;
-        }
-        .product-detail-content {
-            padding: 80px 0;
-        }
-        .detail-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        .detail-image img {
-            width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .detail-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-        }
-        .detail-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: #666;
-        }
-        .features-list {
-            list-style: none;
-            margin-top: 30px;
-        }
-        .features-list li {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 500;
-        }
-        .features-list i {
-            color: var(--secondary-color);
-        }
-        @media (max-width: 768px) {
-            .detail-grid {
-                grid-template-columns: 1fr;
-            }
-            .product-detail-hero {
-                height: 300px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Header -->
@@ -96,7 +36,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="product-detail-hero">
+    <section class="product-detail-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/600?random=22');">
         <div class="container">
             <h1>精致下午茶</h1>
             <p>优雅时光，品味非凡</p>
@@ -120,6 +60,45 @@
                         <li><i class="fas fa-check-circle"></i> 优雅舒适的环境氛围</li>
                         <li><i class="fas fa-check-circle"></i> 专业的侍茶服务</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>下午茶系列展示</h2>
+                <p>优雅格调，精致生活</p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://picsum.photos/600/400?random=41" alt="英式双人下午茶">
+                    </div>
+                    <div class="showcase-info">
+                        <h3>经典英式双人下午茶</h3>
+                        <p>传统的三层塔结构。底层是精致的三明治与咸点，中层是温热松软的司康饼配德文郡奶油，顶层是造型各异的法式甜品。搭配两壶顶级大吉岭红茶。</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://picsum.photos/600/400?random=42" alt="新式中式茶点">
+                    </div>
+                    <div class="showcase-info">
+                        <h3>新式中式茶点套餐</h3>
+                        <p>将传统中式点心与现代西式技法结合。包含流心奶黄芝麻球、抹茶红豆酥以及特制的手冲云南普洱。清新解腻，回味无穷。</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://picsum.photos/600/400?random=43" alt="季节限定果茶">
+                    </div>
+                    <div class="showcase-info">
+                        <h3>季节限定鲜果茶系列</h3>
+                        <p>选用当季最新鲜的时令水果，搭配高山乌龙茶底。不含人工果酱与甜味剂，每一口都能喝到果肉的鲜甜与茶香的清幽。</p>
+                    </div>
                 </div>
             </div>
         </div>

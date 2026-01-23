@@ -6,68 +6,8 @@
     <title>健康轻食系列 - 广州市谷麦夏餐饮管理有限公司</title>
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/product-detail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .product-detail-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/600?random=23');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-align: center;
-            margin-top: 80px;
-        }
-        .product-detail-content {
-            padding: 80px 0;
-        }
-        .detail-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        .detail-image img {
-            width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .detail-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-        }
-        .detail-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: #666;
-        }
-        .features-list {
-            list-style: none;
-            margin-top: 30px;
-        }
-        .features-list li {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 500;
-        }
-        .features-list i {
-            color: var(--secondary-color);
-        }
-        @media (max-width: 768px) {
-            .detail-grid {
-                grid-template-columns: 1fr;
-            }
-            .product-detail-hero {
-                height: 300px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Header -->
@@ -96,7 +36,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="product-detail-hero">
+    <section class="product-detail-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/600?random=23');">
         <div class="container">
             <h1>健康轻食系列</h1>
             <p>轻盈生活，营养加倍</p>
@@ -120,6 +60,45 @@
                         <li><i class="fas fa-check-circle"></i> 零添加人工色素与防腐剂</li>
                         <li><i class="fas fa-check-circle"></i> 环保可降解包装</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>轻食产品展示</h2>
+                <p>低卡美味，健康首选</p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://picsum.photos/600/400?random=51" alt="藜麦鸡胸肉沙拉">
+                    </div>
+                    <div class="showcase-info">
+                        <h3>藜麦鸡胸肉能量碗</h3>
+                        <p>精选三色藜麦作为主食基底，搭配低温慢煮的嫩滑鸡胸肉、牛油果、圣女果及混合生菜。佐以特制油醋汁，低脂饱腹。</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://picsum.photos/600/400?random=52" alt="烟熏三文鱼波奇饭">
+                    </div>
+                    <div class="showcase-info">
+                        <h3>烟熏三文鱼波奇饭</h3>
+                        <p>选用挪威深海三文鱼，富含Omega-3。搭配糙米饭、海藻、毛豆仁与日式温泉蛋。口感丰富，营养全面。</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://picsum.photos/600/400?random=53" alt="全麦牛肉三明治">
+                    </div>
+                    <div class="showcase-info">
+                        <h3>黑椒牛肉全麦三明治</h3>
+                        <p>自制全麦吐司，夹入黑椒汁腌制的牛腱肉切片、芝士片与新鲜蔬菜。富含膳食纤维，是完美的早餐或工作餐选择。</p>
+                    </div>
                 </div>
             </div>
         </div>

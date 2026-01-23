@@ -6,68 +6,8 @@
     <title>特色招牌系列 - 广州市谷麦夏餐饮管理有限公司</title>
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/product-detail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .product-detail-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/600?random=21');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-align: center;
-            margin-top: 80px;
-        }
-        .product-detail-content {
-            padding: 80px 0;
-        }
-        .detail-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        .detail-image img {
-            width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .detail-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-        }
-        .detail-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: #666;
-        }
-        .features-list {
-            list-style: none;
-            margin-top: 30px;
-        }
-        .features-list li {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 500;
-        }
-        .features-list i {
-            color: var(--secondary-color);
-        }
-        @media (max-width: 768px) {
-            .detail-grid {
-                grid-template-columns: 1fr;
-            }
-            .product-detail-hero {
-                height: 300px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Header -->
@@ -96,7 +36,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="product-detail-hero">
+    <section class="product-detail-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/600?random=21');">
         <div class="container">
             <h1>特色招牌系列</h1>
             <p>传承经典，匠心独运</p>
@@ -120,6 +60,45 @@
                         <li><i class="fas fa-check-circle"></i> 标准化烹饪流程，保证品质如一</li>
                         <li><i class="fas fa-check-circle"></i> 持续推陈出新，引领行业潮流</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>招牌产品展示</h2>
+                <p>每一款都是我们的诚意之作</p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://picsum.photos/600/400?random=31" alt="金牌脆皮乳鸽">
+                    </div>
+                    <div class="showcase-info">
+                        <h3>金牌脆皮乳鸽</h3>
+                        <p>选用20天鸽龄的石岐乳鸽，经数十种名贵香料腌制，挂糖皮后恒温风干，再由大火生炸而成。皮脆、肉滑、骨香、多汁。</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://picsum.photos/600/400?random=32" alt="谷麦夏秘制佛跳墙">
+                    </div>
+                    <div class="showcase-info">
+                        <h3>秘制佛跳墙</h3>
+                        <p>精选鲍鱼、海参、花胶、瑶柱等十余种名贵食材，辅以老鸡、火腿熬制12小时的高汤，坛封文火慢炖。汤色金黄，醇厚不腻。</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://picsum.photos/600/400?random=33" alt="招牌古法蒸鱼">
+                    </div>
+                    <div class="showcase-info">
+                        <h3>招牌古法蒸鱼</h3>
+                        <p>每日鲜运到店的水库大鱼，采用传统古法蒸制，搭配特制豉油与葱丝，火候精准控制在秒级，保持鱼肉最极致的鲜嫩口感。</p>
+                    </div>
                 </div>
             </div>
         </div>
