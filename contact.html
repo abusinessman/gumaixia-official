@@ -35,26 +35,33 @@
         </div>
     </header>
 
-    <section class="section-padding" style="margin-top: 80px;">
+    <!-- Contact Hero -->
+    <section class="contact-hero">
         <div class="container">
-            <div class="section-title">
-                <h2>联系我们</h2>
-                <p>如果您有任何疑问或合作意向，欢迎随时联系</p>
-            </div>
+            <h1>联系我们</h1>
+            <p>沟通创造价值，期待与您的每一次交流</p>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="section-padding">
+        <div class="container">
             <div class="contact-wrapper">
-                <div class="contact-info">
+                <!-- Info Panel -->
+                <div class="contact-info-panel">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>公司地址</h4>
-                            <p>XX省XX市XX区XX路XX号</p>
+                            <h4>公司总部</h4>
+                            <p>广州市天河区珠江新城CBD国际金融中心XX楼</p>
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-phone-alt"></i>
                         <div>
                             <h4>咨询热线</h4>
-                            <p>400-888-8888</p>
+                            <p>400-888-8888 (加盟咨询)</p>
+                            <p>020-12345678 (行政办公)</p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -62,14 +69,85 @@
                         <div>
                             <h4>电子邮箱</h4>
                             <p>contact@gumaixia.com</p>
+                            <p>hr@gumaixia.com (人才招募)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>营业时间</h4>
+                            <p>周一至周五: 09:00 - 18:00</p>
+                            <p>周六至周日: 休息 (仅限紧急咨询)</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-qrcode">
-                    <div class="qrcode-wrapper">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.xiliulou.com/" alt="微信二维码">
-                        <p>扫码关注/添加微信</p>
-                    </div>
+
+                <!-- Form Panel -->
+                <div class="contact-form-panel">
+                    <h3>在线留言</h3>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">您的姓名</label>
+                            <input type="text" id="name" class="form-control" placeholder="请输入您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">联系电话</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="请输入您的联系电话" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">咨询主题</label>
+                            <select id="subject" class="form-control">
+                                <option value="franchise">加盟咨询</option>
+                                <option value="business">业务合作</option>
+                                <option value="feedback">意见反馈</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言内容</label>
+                            <textarea id="message" class="form-control" placeholder="请详细描述您的需求或疑问..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">提交留言</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-container">
+                <div class="map-placeholder-text">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>公司地理位置</h3>
+                    <p>正在加载交互式地图...</p>
+                </div>
+                <!-- 实际应用中可在此处嵌入高德/百度地图API -->
+                <img src="https://picsum.photos/1200/400?random=30" alt="地图占位图" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3;">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background-color: var(--light-color);">
+        <div class="container">
+            <div class="section-title">
+                <h2>常见问题 FAQ</h2>
+                <p>快速找到您想了解的答案</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>加盟谷麦夏餐饮需要什么条件？</h4>
+                    <p>我们需要合作伙伴具备基本的创业热情、良好的信誉记录、一定的资金实力，并认同谷麦夏的品牌文化与管理理念。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>总部提供哪些培训支持？</h4>
+                    <p>总部提供从零开始的全方位培训，包括产品制作技术、店面日常管理、营销策划推广、外卖运营实操等，确保加盟商顺利开业。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>食材供应链是如何运作的？</h4>
+                    <p>我们拥有自建的智慧供应链中心，核心食材由总部统一采购配送，确保全国门店品质统一，降低单店采购成本。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>投资回报周期大概多久？</h4>
+                    <p>回报周期受选址、当地消费水平、店面租金及运营情况等多种因素影响，根据现有门店数据，平均回报周期在10-18个月之间。</p>
                 </div>
             </div>
         </div>

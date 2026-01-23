@@ -1,29 +1,40 @@
 /* Contact Page Specific Styles */
-.contact-wrapper {
+.contact-hero {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/400?random=25');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    gap: 30px;
-    align-items: stretch; /* 确保左右两列等高 */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    margin-top: 80px;
 }
 
-.contact-info, .contact-qrcode {
-    flex: 1;
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.contact-info-panel {
     background: var(--white);
     padding: 40px;
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* 垂直居中内容 */
-}
-
-.contact-info {
-    justify-content: flex-start; /* 信息栏顶部对齐，但容器等高 */
 }
 
 .info-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .info-item:last-child {
@@ -31,22 +42,22 @@
 }
 
 .info-item i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
     margin-right: 20px;
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     background: #f0f7ff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 12px;
     flex-shrink: 0;
 }
 
 .info-item h4 {
-    margin-bottom: 5px;
-    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
     color: var(--dark-color);
 }
 
@@ -55,52 +66,115 @@
     line-height: 1.6;
 }
 
-.contact-qrcode {
-    align-items: center;
-    text-align: center;
+/* Contact Form */
+.contact-form-panel {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.qrcode-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact-form-panel h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
 }
 
-.qrcode-wrapper img {
-    width: 180px;
-    height: 180px;
+.form-group {
     margin-bottom: 20px;
-    border: 8px solid #f9f9f9;
-    border-radius: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
     transition: var(--transition);
 }
 
-.qrcode-wrapper img:hover {
-    transform: scale(1.05);
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.1);
 }
 
-.qrcode-wrapper p {
-    font-weight: 600;
-    color: var(--secondary-color);
+textarea.form-control {
+    height: 150px;
+    resize: none;
+}
+
+/* FAQ Section */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.faq-item {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.faq-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.faq-item h4::before {
+    content: 'Q:';
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.faq-item p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Map Placeholder */
+.map-container {
+    height: 400px;
+    background-color: #eee;
+    border-radius: 15px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.map-placeholder-text {
+    text-align: center;
+    z-index: 2;
+}
+
+.map-placeholder-text i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
 }
 
 @media (max-width: 992px) {
     .contact-wrapper {
-        gap: 20px;
-    }
-    .contact-info, .contact-qrcode {
-        padding: 30px;
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 768px) {
-    .contact-wrapper {
-        flex-direction: column;
-    }
-    
-    .contact-info, .contact-qrcode {
-        flex: none;
-        width: 100%;
+    .faq-grid {
+        grid-template-columns: 1fr;
     }
 }
