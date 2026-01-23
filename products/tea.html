@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精致下午茶 - 广州市谷麦夏餐饮管理有限公司</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .product-detail-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/600?random=22');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+            margin-top: 80px;
+        }
+        .product-detail-content {
+            padding: 80px 0;
+        }
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .detail-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .detail-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .detail-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .features-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+        .features-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+        .features-list i {
+            color: var(--secondary-color);
+        }
+        @media (max-width: 768px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+            .product-detail-hero {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>广州市谷麦夏餐饮管理有限公司</h1>
+                </a>
+            </div>
+            <nav id="nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../services.html">核心业务</a></li>
+                    <li><a href="../about.html">关于我们</a></li>
+                    <li><a href="../news/index.html">新闻动态</a></li>
+                    <li><a href="../contact.html">联系我们</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="product-detail-hero">
+        <div class="container">
+            <h1>精致下午茶</h1>
+            <p>优雅时光，品味非凡</p>
+        </div>
+    </section>
+
+    <!-- Detail Content -->
+    <section class="product-detail-content">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-image">
+                    <img src="https://picsum.photos/800/600?random=12" alt="精致下午茶">
+                </div>
+                <div class="detail-text">
+                    <h2>为您开启悠闲午后时光</h2>
+                    <p>在忙碌的都市生活中，谷麦夏为您提供一处心灵的栖息地。我们的精致下午茶系列，汇聚了世界各地的优质茶叶与咖啡，搭配手工制作的精美甜点，让您在味蕾的享受中放松身心。</p>
+                    <p>无论是独自一人的静谧时光，还是与好友的畅谈时刻，这里都是您的不二之选。</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 全球甄选顶级茶叶与咖啡豆</li>
+                        <li><i class="fas fa-check-circle"></i> 纯手工制作甜点，低糖更健康</li>
+                        <li><i class="fas fa-check-circle"></i> 优雅舒适的环境氛围</li>
+                        <li><i class="fas fa-check-circle"></i> 专业的侍茶服务</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>广州市谷麦夏餐饮管理有限公司</h3>
+                    <p>专业餐饮品牌管理服务商</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../services.html">核心业务</a></li>
+                        <li><a href="../about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>关注我们</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 广州市谷麦夏餐饮管理有限公司 版权所有 | <a href="https://beian.miit.gov.cn/">ICP备案号：XXXXXX</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>
