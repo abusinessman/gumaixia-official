@@ -1,6 +1,6 @@
-# 广州健拓信息科技有限公司 - 官方网站
+# 广州市谷麦夏餐饮管理有限公司 - 官方网站
 
-广州健拓信息科技有限公司官网项目，旨在展示公司核心业务、新闻动态及企业文化，提供智能出行能源解决方案。
+广州市谷麦夏餐饮管理有限公司官网项目，旨在展示公司餐饮品牌加盟、运营管理及供应链服务。
 
 ## 🚀 项目特性
 
@@ -12,15 +12,15 @@
 ## 📁 项目目录结构
 
 ```text
-jiantuo-official/
+gumaixia-official/
 ├── index.html              # 网站首页
 ├── about.html              # 关于我们
 ├── services.html           # 核心业务
 ├── contact.html            # 联系我们
 ├── news/                   # 新闻动态模块
 │   ├── index.html          # 新闻列表页
-│   ├── 2026-01-new-service.html # 新闻详情：智能换电柜发布
-│   └── 2026-02-event.html       # 新闻详情：参加新能源展会
+│   ├── 2026-01-new-service.html # 新闻详情：智能厨房解决方案
+│   └── 2026-02-event.html       # 新闻详情：参加餐饮加盟展
 ├── assets/                 # 静态资源
 │   ├── css/                # 样式表
 │   │   ├── reset.css       # 样式重置
@@ -50,7 +50,7 @@ jiantuo-official/
 
 1. 克隆项目：
    ```bash
-   git clone https://github.com/abusinessman/jiantuo-official.git
+   git clone https://github.com/your-repo/gumaixia-official.git
    ```
 2. 直接在浏览器中打开 `index.html` 即可预览效果。
 
@@ -60,4 +60,4 @@ jiantuo-official/
 - **脚本修改**：全局交互（如导航栏）位于 `common.js`。
 
 ---
-© 2026 广州健拓信息科技有限公司 版权所有
+© 2026 广州市谷麦夏餐饮管理有限公司 版权所有
