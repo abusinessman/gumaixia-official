@@ -19,7 +19,7 @@
 
 .about-hero p {
     font-size: 1.2rem;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .about-flex {
@@ -88,7 +88,7 @@
 /* Timeline Section */
 .timeline {
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 50px auto;
 }
 
