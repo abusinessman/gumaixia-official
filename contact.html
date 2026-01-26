@@ -82,45 +82,22 @@
                     </div>
                 </div>
 
-                <!-- Form Panel -->
-                <div class="contact-form-panel">
-                    <h3>在线留言</h3>
-                    <form action="#">
-                        <div class="form-group">
-                            <label for="name">您的姓名</label>
-                            <input type="text" id="name" class="form-control" placeholder="请输入您的姓名" required>
+                <!-- WeChat QR Code Panel -->
+                <div class="contact-wechat-panel">
+                    <div class="wechat-qr-content">
+                        <h3>微信扫码联系</h3>
+                        <p>扫描下方二维码，添加专业顾问，获取 1 对 1 咨询服务</p>
+                        <div class="qr-code-box">
+                            <!-- 实际应用中请替换为真实的微信二维码图片 -->
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://u.wechat.com/dummy-qr" alt="微信二维码">
+                            <div class="qr-scan-hint">
+                                <i class="fab fa-weixin"></i>
+                                <span>微信扫一扫</span>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">联系电话</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="请输入您的联系电话" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">咨询主题</label>
-                            <select id="subject" class="form-control">
-                                <option value="franchise">加盟咨询</option>
-                                <option value="business">业务合作</option>
-                                <option value="feedback">意见反馈</option>
-                                <option value="other">其他</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">留言内容</label>
-                            <textarea id="message" class="form-control" placeholder="请详细描述您的需求或疑问..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">提交留言</button>
-                    </form>
+                        <p class="wechat-note">咨询高峰期如未能及时通过，请耐心等待或拨打咨询热线</p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Map Section -->
-            <div class="map-container">
-                <div class="map-placeholder-text">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>公司地理位置</h3>
-                    <p>正在加载交互式地图...</p>
-                </div>
-                <!-- 实际应用中可在此处嵌入高德/百度地图API -->
-                <img src="https://picsum.photos/1200/400?random=30" alt="地图占位图" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3;">
             </div>
         </div>
     </section>

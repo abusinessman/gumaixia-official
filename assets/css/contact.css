@@ -17,24 +17,28 @@
     margin-bottom: 10px;
 }
 
+/* Contact Wrapper */
 .contact-wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     margin-top: 50px;
 }
 
-.contact-info-panel {
+.contact-info-panel, .contact-wechat-panel {
     background: var(--white);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .info-item:last-child {
@@ -66,47 +70,56 @@
     line-height: 1.6;
 }
 
-/* Contact Form */
-.contact-form-panel {
-    background: var(--white);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+/* WeChat Panel */
+.contact-wechat-panel {
+    text-align: center;
 }
 
-.contact-form-panel h3 {
+.wechat-qr-content h3 {
     font-size: 1.8rem;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
 }
 
-.form-group {
+.wechat-qr-content p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.qr-code-box {
+    display: inline-block;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.form-group label {
+.qr-code-box img {
+    width: 200px;
+    height: 200px;
     display: block;
-    margin-bottom: 8px;
+}
+
+.qr-scan-hint {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #07c160; /* WeChat Green */
     font-weight: 600;
 }
 
-.form-control {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: var(--transition);
+.wechat-note {
+    font-size: 0.9rem;
+    color: #999 !important;
 }
 
-.form-control:focus {
-    border-color: var(--primary-color);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.1);
-}
-
-textarea.form-control {
-    height: 150px;
-    resize: none;
+@media (max-width: 992px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* FAQ Section */
@@ -141,36 +154,6 @@ textarea.form-control {
 .faq-item p {
     line-height: 1.6;
     color: #555;
-}
-
-/* Map Placeholder */
-.map-container {
-    height: 400px;
-    background-color: #eee;
-    border-radius: 15px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.map-placeholder-text {
-    text-align: center;
-    z-index: 2;
-}
-
-.map-placeholder-text i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-@media (max-width: 992px) {
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 768px) {
