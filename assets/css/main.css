@@ -235,6 +235,82 @@ footer {
     transform: translateX(-50%) scale(1);
 }
 
+.footer-miniprogram {
+    margin-top: 25px;
+}
+
+.footer-miniprogram h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.miniprogram-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.miniprogram-icons a {
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    color: #07c160; /* Mini Program Green */
+    transition: var(--transition);
+}
+
+.miniprogram-icons a:hover {
+    color: #06ad56;
+    transform: translateY(-3px);
+}
+
+.miniprogram-icons a .qr-tooltip {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    width: 140px;
+    pointer-events: none;
+    color: #333;
+    text-align: center;
+}
+
+.miniprogram-icons a .qr-tooltip img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.miniprogram-icons a .qr-tooltip p {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+    line-height: 1.2;
+}
+
+.miniprogram-icons a .qr-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-top-color: #fff;
+}
+
+.miniprogram-icons a:hover .qr-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
